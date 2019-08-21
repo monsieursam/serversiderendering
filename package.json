@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "license": "MIT",
   "engines": {
-    "node": "8.1.x",
+    "node": "10.16.1",
     "npm": "5.4.0",
-    "yarn": "0.28.4"
+    "yarn": "1.17.3"
   },
   "scripts": {
     "dev": "razzle start",
