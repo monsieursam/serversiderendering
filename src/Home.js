@@ -19,7 +19,7 @@ class Home extends Component {
           {' '}
           <code>src/Home.js</code>
           {' '}
-          and save to reload.
+          and save to fregeriugfhjdsgrhje.
         </p>
         <ul className="Home-resources">
           <li><a href="https://github.com/jaredpalmer/razzle">Docs</a></li>
