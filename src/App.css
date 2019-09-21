@@ -1,5 +1,109 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+.App {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+}
+
+.App-logo {
+	animation: App-logo-spin infinite 20s linear;
+	height: 40vmin;
+	pointer-events: none;
+}
+
+.header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 80%;
+	align-items: center;
+	height: 80px;
+}
+
+.logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 300px;
+}
+
+.articles {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	width: 80%;
+	padding: 10px;
+}
+
+.go-to {
+	margin: 2%;
+	width: 28%;
+	height: 400px;
+}
+.back {
+	width: 80%;
+}
+
+.header-right div {
+	margin: 10px;
+}
+
+.header-right {
+	display: flex;
+}
+.article-part {
+	width: 80%;
+	display: flex;
+	padding: 30px 10px;
+}
+
+.article {
+	height: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-direction: column;
+}
+
+img {
+	width: 100%;
+}
+
+.image {
+	width: 50%;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 10px;
+}
+.text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 50%;
+	background-color: blue;
+	height: 500px;
+	margin: 10px;
+}
+
+.App-link {
+	color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.logoimage {
+	width: auto;
+	height: 100%;
 }
