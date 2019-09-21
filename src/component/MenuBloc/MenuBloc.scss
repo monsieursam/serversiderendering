@@ -1,6 +1,10 @@
 .menu-bloc {
+	position: fixed;
+	left: 0;
+	top: 0;
 	display: flex;
+	height: 100%;
 	flex-direction: column;
-	background-color: red;
-	padding: 40px 60px;
+	width: 150px;
+	padding: 40px 20px;
 }

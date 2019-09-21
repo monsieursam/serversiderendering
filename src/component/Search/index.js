@@ -1,7 +1,6 @@
 import React, { Component, Fragment } from 'react'
-import { Link } from 'react-router-dom'
 
-// import './MenuBloc.scss'
+import './Search.scss'
 
 class Header extends Component {
   render() {

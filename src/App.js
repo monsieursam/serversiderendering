@@ -2,14 +2,14 @@ import React, {Fragment, Component } from 'react';
 import { Switch, Route, BrowserRouter, Link,  } from 'react-router-dom'
 import * as firebase from "firebase";
 
-import Header from './Header'
+import HeaderLogo from './component/HeaderLogo/'
 import MenuBloc from './component/MenuBloc/'
 import Search from './component/Search/'
 import BrowserArticle from './component/BrowseArticles/'
+import Article from './component/Article';
 
-import './App.css';
+import './App.scss';
 
-import Article from './Article';
 
 var firebaseConfig = {
       apiKey: "AIzaSyBYCgXlXQYKhQ2viYpKheg9zO0V2qzt8dg",
@@ -51,8 +51,8 @@ class App extends Component {
     return (
       <div className="App">
         <MenuBloc />
-        <div>
-          <Header></Header>
+        <div className='container'>
+          <HeaderLogo />
           <Switch>
             <Route path='/' exact component={BrowserArticle} />
             <Route path='/article/:id' exact component={Article} />
