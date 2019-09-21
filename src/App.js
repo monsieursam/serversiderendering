@@ -3,6 +3,9 @@ import { Switch, Route, BrowserRouter, Link,  } from 'react-router-dom'
 import * as firebase from "firebase";
 
 import Header from './Header'
+import MenuBloc from './component/MenuBloc/'
+import Search from './component/Search/'
+import BrowserArticle from './component/BrowseArticles/'
 
 import './App.css';
 
@@ -47,29 +50,15 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header></Header>
-        <Switch>
-          <Route path='/' exact component={() =>
-            <div className="articles">
-              {this.state.articles.map(article => (
-                <Link className="go-to" to={`/article/${article.id}`}>
-                <div className="article">
-                    <div>
-                      <img src={article.image}></img>
-                    </div>
-                    <div>
-                      {article.name}
-                      {article.price}
-                      {article.availability}
-                    </div>
-                </div>
-              </Link>
-              ))}
-            </div>
-          }>
-          </Route>
-        <Route path='/article/:id' exact component={Article} />
-        </Switch>
+        <MenuBloc />
+        <div>
+          <Header></Header>
+          <Switch>
+            <Route path='/' exact component={BrowserArticle} />
+            <Route path='/article/:id' exact component={Article} />
+          </Switch>
+        </div>
+        <Search />
       </div>
     );
   }
