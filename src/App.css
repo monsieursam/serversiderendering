@@ -1,7 +1,6 @@
 .App {
 	display: flex;
-	align-items: center;
-	flex-direction: column;
+	flex-direction: row;
 	width: 100%;
 }
 
@@ -28,14 +27,6 @@
 	height: 300px;
 }
 
-.articles {
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	width: 80%;
-	padding: 10px;
-}
-
 .go-to {
 	margin: 2%;
 	width: 28%;
@@ -51,6 +42,7 @@
 
 .header-right {
 	display: flex;
+	flex-direction: column;
 }
 .article-part {
 	width: 80%;

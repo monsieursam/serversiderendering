@@ -1,14 +1,13 @@
 import React, { Component, Fragment } from 'react'
 import { Link } from 'react-router-dom'
 
-import logo from './img/logoofficialc.png'
+// import './MenuBloc.scss'
 
 class Header extends Component {
   render() {
-    return (
-      <div className="logo">
-            <img className='logoimage' src={logo}></img>
-        </div>)
+    return <div className='search-bloc'>
+        <input type="text" placeholder='Search'></input>
+    </div>
   }
 }
 
