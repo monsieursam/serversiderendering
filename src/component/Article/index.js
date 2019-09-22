@@ -9,8 +9,17 @@ class Article extends Component {
     super(props)
 
     this.state = {
-      article: {}
+      article: {},
+      selectedSize: ''
     }
+  }
+
+  clickedOnSize = size => {
+    console.log(size)
+
+    this.setState({
+      selectedSize: size
+    })
   }
 
   componentDidMount() {
@@ -30,6 +39,8 @@ class Article extends Component {
   }
 
   render() {
+
+    console.log(this.state.article)
     return <div className='article'>
       <div className="back"><Link className="back" to="/">Back</Link></div>
         <div className="article-part">
@@ -46,7 +57,27 @@ class Article extends Component {
             <p>
               {this.state.article.titledeux}
             </p>
-            
+            <p>
+              {this.state.article.description}
+            </p>
+            <p>
+              {this.state.article.material}
+            </p>
+            <p>
+              {this.state.article.availability}
+            </p>
+            <p>
+              {this.state.article.sizes && this.state.article.sizes.map(size => (
+              <button text={size} onClick={event => this.clickedOnSize(size)}>{size}</button>
+              ))}
+            </p>
+            <button text="Ajouter au panier">Ajouter au panier</button>
+            <p>
+              {this.state.article.cut}
+            </p>
+            <p>
+              {this.state.article.madein}
+            </p>
           </div>
         </div>
       </div>

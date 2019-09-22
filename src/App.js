@@ -7,6 +7,7 @@ import MenuBloc from './component/MenuBloc/'
 import Search from './component/Search/'
 import BrowserArticle from './component/BrowseArticles/'
 import Article from './component/Article';
+import Panier from './component/Panier';
 
 import './App.scss';
 
@@ -56,6 +57,7 @@ class App extends Component {
           <Switch>
             <Route path='/' exact component={BrowserArticle} />
             <Route path='/article/:id' exact component={Article} />
+            <Route path='/panier' exact component={Panier} />
           </Switch>
         </div>
         <Search />
