@@ -56,7 +56,7 @@ class App extends Component {
       <div className="App">
         <MenuBloc />
         <div className='container'>
-          <StripeProvider apiKey="pk_test_NNQI6KvykHwyoH994mmGxMOA00LP97tdi4">
+          <StripeProvider apiKey="pk_test_NNQI6KvykHwyoH994mmGxMOA00Lp97tDi4">
             <Elements>
               <CheckoutForm />
             </Elements>
