@@ -39,6 +39,7 @@ server
     <body>
         <div id="root">${markup}</div>
     </body>
+    <script src="https://js.stripe.com/v3/"></script>
 </html>`
       );
     }

@@ -1,6 +1,8 @@
 import React, {Fragment, Component } from 'react';
 import { Switch, Route, BrowserRouter, Link,  } from 'react-router-dom'
 import * as firebase from "firebase";
+import {Elements, StripeProvider, CardElement, injectStripe} from 'react-stripe-elements';
+import CheckoutForm from './component/CheckoutForm'
 
 import HeaderLogo from './component/HeaderLogo/'
 import MenuBloc from './component/MenuBloc/'
@@ -23,7 +25,8 @@ var firebaseConfig = {
     };
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
-  
+// Stripe('pk_test_NNQI6KvykHwyoH994mmGxMOA00LP97tdi4');
+
 class App extends Component {
   constructor(props) {
     super(props)
@@ -53,6 +56,11 @@ class App extends Component {
       <div className="App">
         <MenuBloc />
         <div className='container'>
+          <StripeProvider apiKey="pk_test_NNQI6KvykHwyoH994mmGxMOA00LP97tdi4">
+            <Elements>
+              <CheckoutForm />
+            </Elements>
+          </StripeProvider>
           <HeaderLogo />
           <Switch>
             <Route path='/' exact component={BrowserArticle} />
