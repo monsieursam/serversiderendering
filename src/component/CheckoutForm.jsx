@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {CardElement, injectStripe} from 'react-stripe-elements';
+import {CardElement, injectStripe} from 'react-stripe-elements-universal';
 
 class CheckoutForm extends Component {
   constructor(props) {
@@ -8,7 +8,6 @@ class CheckoutForm extends Component {
   }
 
   async submit(ev) {
-    console.log(this.props.stripe)
     let token = await this.props.stripe.createToken({name: "Name"});
     console.log(token)
     let response = await fetch("/charge", {

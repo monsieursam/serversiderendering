@@ -1,7 +1,7 @@
 import React, {Fragment, Component } from 'react';
 import { Switch, Route, BrowserRouter, Link,  } from 'react-router-dom'
 import * as firebase from "firebase";
-import {Elements, StripeProvider, CardElement, injectStripe} from 'react-stripe-elements';
+import {Elements, StripeProvider} from 'react-stripe-elements-universal';
 import CheckoutForm from './component/CheckoutForm'
 
 import HeaderLogo from './component/HeaderLogo/'
