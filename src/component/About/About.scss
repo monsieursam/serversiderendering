@@ -1,0 +1,27 @@
+.about {
+	display: flex;
+	flex-direction: column;
+
+	.aboutus-text {
+		width: 100%;
+
+		p {
+			text-align: justify;
+		}
+	}
+	.aboutus-images {
+		display: flex;
+		justify-content: space-between;
+		.first, .second {
+			img {
+				width: 100%;
+			}
+		}
+		.first {
+			width: 59%;
+		}
+		.second {
+			width: 39%;
+		}
+	}
+}

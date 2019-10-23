@@ -11,6 +11,7 @@ import BrowserArticle from './component/BrowseArticles/'
 import Article from './component/Article';
 import Panier from './component/Panier';
 import Login from './component/Login'
+import About from './component/About'
 
 import './App.scss';
 
@@ -62,6 +63,7 @@ class App extends Component {
             <Route path='/article/:id' exact component={Article} />
             <Route path='/panier' exact component={Panier} />
             <Route path='/login' exact component={Login} />
+            <Route path='/aboutus' exact component={About} />
           </Switch>
         </div>
         <Search />
