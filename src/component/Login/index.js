@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react'
 import { NavLink } from 'react-router-dom'
 import firebase from 'firebase'
 
+import './Login.scss'
 
 class Sign extends Component {
 
@@ -48,11 +49,13 @@ class Sign extends Component {
   render() {
     return <div className='sign'>
       <div className='login' >
+        <h2>Login</h2>
         <input name='emailSignIp' type='text' value={this.state.emailSignIp} onChange={this.handleInputChange}/>
         <input name='passwordSignIn' type='password' value={this.state.passwordSignIn} onChange={this.handleInputChange} />
         <input type='button' />
       </div>
       <div className='sign_up'>
+        <h2>Sign up</h2>
         <input name='emailSignUp' type='text' value={this.state.emailSignUp} onChange={this.handleInputChange} />
         <input name='passwordSignUp' type='password' value={this.state.passwordSignUp} onChange={this.handleInputChange} />
         newsletter
