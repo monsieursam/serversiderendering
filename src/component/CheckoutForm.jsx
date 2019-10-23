@@ -26,6 +26,8 @@ class CheckoutForm extends Component {
         console.log(err)
     }
 
+
+
   }
 
   render() {

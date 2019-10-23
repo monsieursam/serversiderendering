@@ -10,6 +10,7 @@ import Search from './component/Search/'
 import BrowserArticle from './component/BrowseArticles/'
 import Article from './component/Article';
 import Panier from './component/Panier';
+import Login from './component/Login'
 
 import './App.scss';
 
@@ -48,7 +49,6 @@ class App extends Component {
         articles
       })
     })
-    
   }
 
   render() {
@@ -56,16 +56,12 @@ class App extends Component {
       <div className="App">
         <MenuBloc />
         <div className='container'>
-          <StripeProvider apiKey="pk_test_NNQI6KvykHwyoH994mmGxMOA00Lp97tDi4">
-            <Elements>
-              <CheckoutForm />
-            </Elements>
-          </StripeProvider>
           <HeaderLogo />
           <Switch>
             <Route path='/' exact component={BrowserArticle} />
             <Route path='/article/:id' exact component={Article} />
             <Route path='/panier' exact component={Panier} />
+            <Route path='/login' exact component={Login} />
           </Switch>
         </div>
         <Search />
