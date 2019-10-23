@@ -22,7 +22,6 @@
     "razzle-plugin-scss": "^3.0.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "react-imageengine": "^1.2.0",
     "react-router-dom": "^5.0.1",
     "react-stripe-elements": "^5.0.1",
     "react-stripe-elements-universal": "^1.2.0-3",
