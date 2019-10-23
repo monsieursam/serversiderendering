@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom'
 
 import first from '../../img/patrick-hendry-633205-unsplash.jpg'
 import second from '../../img/los-angeles-1790986_1920.jpg'
+import third from '../../img/paris.png'
 
 import './About.scss'
 
@@ -32,11 +33,18 @@ class About extends Component {
 </p>
       </div>
       <div className='aboutus-images'>
-        <div className='first'>
-          <img src={second} />
+        <div className='left'>
+          <div className='first'>
+            <img src={second} />
+          </div>
+          <div className='third'>
+            <img src={third} />
+          </div>
         </div>
-        <div className='second'>
-          <img src={first} />
+        <div className='right'>
+          <div className='second'>
+            <img src={first} />
+          </div>
         </div>
       </div>
     </div>

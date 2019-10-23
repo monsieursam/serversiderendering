@@ -12,16 +12,25 @@
 	.aboutus-images {
 		display: flex;
 		justify-content: space-between;
-		.first, .second {
+
+		.left {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+			width: 49%;
+
+			.third {
+				margin: 2% 0;
+				width: 60%;
+			}
+		}
+		.right {
+			width: 49%;
+		}
+		.first, .second, .third {
 			img {
 				width: 100%;
 			}
-		}
-		.first {
-			width: 59%;
-		}
-		.second {
-			width: 39%;
 		}
 	}
 }
