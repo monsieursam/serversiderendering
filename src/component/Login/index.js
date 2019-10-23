@@ -50,22 +50,34 @@ class Sign extends Component {
     return <div className='sign'>
       <div className='login' >
         <h2>Login</h2>
-        <input name='emailSignIp' type='text' value={this.state.emailSignIp} onChange={this.handleInputChange}/>
-        <input name='passwordSignIn' type='password' value={this.state.passwordSignIn} onChange={this.handleInputChange} />
-        <input type='button' />
+        <div className=''>
+          <label>Email</label><br/>
+          <input placeholder='Email' name='emailSignIp' type='text' value={this.state.emailSignIp} onChange={this.handleInputChange}/>
+        </div>
+        <div>
+          <label>Password</label><br/>
+          <input placeholder='Password' name='passwordSignIn' type='password' value={this.state.passwordSignIn} onChange={this.handleInputChange} />
+        </div>
+        <div>
+          <input type='button' value="Connexion"/>
+        </div>
       </div>
       <div className='sign_up'>
         <h2>Sign up</h2>
-        <input name='emailSignUp' type='text' value={this.state.emailSignUp} onChange={this.handleInputChange} />
-        <input name='passwordSignUp' type='password' value={this.state.passwordSignUp} onChange={this.handleInputChange} />
-        newsletter
-        homme femme
+        <div>
+          <input placeholder='Email' name='emailSignUp' type='text' value={this.state.emailSignUp} onChange={this.handleInputChange} />
+        </div>
+        <div>
+          <input placeholder='Password' name='passwordSignUp' type='password' value={this.state.passwordSignUp} onChange={this.handleInputChange} />
+        </div>
+        x Newsletter
+        x Homme Femme
         <select>
           <option>
             Pays
           </option>
         </select>
-        <input type='button' onClick={() => this.signUp()} />
+        <input type='button' onClick={() => this.signUp()} value="Inscription" />
       </div>
     </div>
   }

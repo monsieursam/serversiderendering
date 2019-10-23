@@ -2,6 +2,9 @@
 	display:flex;
 	justify-content: space-between;
 	width: 100%;
+	h2 {
+		margin: 0px;
+	}
 
 	.login {
 		display: flex;
@@ -19,5 +22,12 @@
 		width: 40%;
 		background-color: blue;
 		padding: 20px;
+	}
+
+	input {
+		margin: 10px 0px;
+		border: none;
+		height: 30px;
+		width: 300px;
 	}
 }
